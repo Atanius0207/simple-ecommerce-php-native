@@ -1,0 +1,125 @@
+/* Reset & Font */
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #e8f5e9, #f1f8e9);
+    animation: fadeInBg 1s ease forwards;
+}
+
+/* Animasi masuk background */
+@keyframes fadeInBg {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Container Form */
+.form-container {
+    background: #ffffff;
+    padding: 35px 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    width: 360px;
+    text-align: center;
+    animation: slideUp 0.8s ease forwards;
+    opacity: 0;
+}
+
+/* Efek masuk form */
+@keyframes slideUp {
+    0% { transform: translateY(40px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #1db954;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+/* Input Style */
+input {
+    width: 93%;
+    padding: 12px;
+    margin: 12px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    transition: all 0.3s ease;
+    background: #f9f9f9;
+}
+
+input:focus {
+    border-color: #1db954;
+    box-shadow: 0 0 8px rgba(29,185,84,0.3);
+    background: #fff;
+}
+
+/* Tombol */
+button {
+    background: #1db954;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #17a444;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(23,164,68,0.3);
+}
+
+/* Pesan Error */
+.error {
+    color: #e53935;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+/* Link Register/Login */
+p {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #666;
+}
+
+a {
+    color: #1db954;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #17a444;
+    text-decoration: underline;
+}
+
+/* Animasi Halus saat Pindah Halaman */
+.fade-out {
+    animation: fadeOut 0.5s forwards;
+}
+.fade-in {
+    animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

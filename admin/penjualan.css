@@ -1,0 +1,78 @@
+.sales-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: #1e1e1e;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+  transition: all 0.3s ease;
+}
+
+.sales-table th, .sales-table td {
+  padding: 14px 18px;
+  text-align: center;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+.sales-table thead {
+  background: linear-gradient(135deg, #1db954, #17a444);
+  color: #fff;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+}
+
+.sales-table tbody tr {
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.sales-table tbody tr:nth-child(even) {
+  background: #2a2a2a;
+}
+
+.sales-table tbody tr:hover {
+  background: #333;
+  transform: scale(1.01);
+}
+
+/* Tombol Aksi */
+.btn-edit, .btn-delete {
+  border: none;
+  padding: 6px 12px;
+  margin: 0 5px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-size: 13px;
+  transition: all 0.3s ease;
+}
+
+.btn-edit {
+  background: linear-gradient(135deg, #3498db, #2980b9);
+}
+
+.btn-delete {
+  background: linear-gradient(135deg, #e74c3c, #c0392b);
+}
+
+.btn-edit:hover {
+  background: linear-gradient(135deg, #5dade2, #3498db);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(52, 152, 219, 0.3);
+}
+
+.btn-delete:hover {
+  background: linear-gradient(135deg, #ff6f61, #e74c3c);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(231, 76, 60, 0.3);
+}
+
+/* Icon di tombol */
+.btn-edit i, .btn-delete i {
+  font-size: 14px;
+}

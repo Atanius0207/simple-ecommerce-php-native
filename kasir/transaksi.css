@@ -1,0 +1,139 @@
+.badge {
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.badge-pending { background: #f1c40f; color: #000; }
+.badge-dibayar { background: #3498db; color: #fff; }
+.badge-dikirim { background: #9b59b6; color: #fff; }
+.badge-selesai { background: #2ecc71; color: #fff; }
+.badge-dibatalkan { background: #e74c3c; color: #fff; }
+/* Container Utama */
+.container {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #1e1e1e;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Judul Halaman */
+.container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1db954;
+    font-size: 24px;
+}
+
+/* Tabel Transaksi */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background: #2c2c2c;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.table th, .table td {
+    padding: 12px 15px;
+    text-align: center;
+    border-bottom: 1px solid #444;
+    color: #ddd;
+    font-size: 14px;
+}
+
+.table th {
+    background: #191414;
+    color: #1db954;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+}
+
+.table tr:hover {
+    background: rgba(29,185,84,0.1);
+    transition: 0.3s;
+}
+
+/* Tombol Update */
+.btn {
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 13px;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    transition: all 0.2s ease-in-out;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.btn i {
+    font-size: 14px;
+}
+
+/* Tombol Utama */
+.btn-primary {
+    background: #1db954;
+    color: #fff;
+}
+.btn-primary:hover {
+    background: #17a44a;
+}
+
+/* Dropdown Status */
+select {
+    padding: 5px 8px;
+    border-radius: 6px;
+    border: 1px solid #555;
+    background: #2c2c2c;
+    color: #fff;
+    font-size: 13px;
+    cursor: pointer;
+}
+select:focus {
+    outline: none;
+    border-color: #1db954;
+}
+
+/* Badge Status */
+.badge {
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    display: inline-block;
+    min-width: 80px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Warna Status */
+.badge-pending { background: #f1c40f; color: #000; }
+.badge-dibayar { background: #3498db; color: #fff; }
+.badge-dikirim { background: #9b59b6; color: #fff; }
+.badge-selesai { background: #2ecc71; color: #fff; }
+.badge-dibatalkan { background: #e74c3c; color: #fff; }
+
+/* Responsive */
+@media (max-width: 768px) {
+    .table th, .table td {
+        font-size: 12px;
+        padding: 8px;
+    }
+    .btn {
+        font-size: 12px;
+        padding: 5px 8px;
+    }
+    select {
+        font-size: 12px;
+        padding: 4px 6px;
+    }
+}
