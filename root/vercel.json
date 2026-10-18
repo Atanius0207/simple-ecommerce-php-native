@@ -9,8 +9,11 @@
   },
   "routes": [
     {
+        "handle": "filesystem"
+    },
+    {
       "src": "/(.*)",
-      "dest": "/$1"
+      "dest": "/index.php"
     }
   ]
 }
